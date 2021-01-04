@@ -14,13 +14,20 @@
     <!-- content wrapper -->
     <div class="md:col-span-1 md:flex md:justify-end">
       <nav class="text-right">
-        <div>
+        <div class="flex justify-between items-center">
           <h1 class="font-bold uppercase p-4 border-b border-gray-100">
             <a href="/" class="hover:text-gray-700">Food Ninja</a>
           </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="menu-bar">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
         </div>
 
-        <ul class="text-sm mt-6">
+        <ul class="text-sm mt-6 hidden md:block" id="menu">
           <li class="text-gray-700 font-bold py-1">
             <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
               <span>Home</span>
@@ -35,8 +42,7 @@
           <li class="py-1">
             <a href="#" class="px-4 flex justify-end border-r-4 border-white">
               <span>About</span>
-              <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                   d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                   clip-rule="evenodd"></path>
@@ -59,7 +65,8 @@
     <main class="px-16 py-6 bg-gray-100 md:col-span-2">
       <div class="flex justify-center md:justify-end">
         <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
-        <a href="#" class="btn text-primary lg:ml-4 ml-2 border-primary md:border-2 hover:bg-primary hover:text-white">Sign up</a>
+        <a href="#"
+          class="btn text-primary lg:ml-4 ml-2 border-primary md:border-2 hover:bg-primary hover:text-white">Sign up</a>
       </div>
 
       <!-- test for usage of the flexbox -->
@@ -142,6 +149,7 @@
     </main>
   </div>
 
+  <script src="./index.js"></script>
 </body>
 
 </html>
